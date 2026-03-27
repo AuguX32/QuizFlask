@@ -30,12 +30,17 @@
 
     <main class="text-center bg-sky-500">
         <!-- Instructions -->
-        <p class="text-[21px] m-12  text-center "> Réponds aux questions pour deviner à quel personnage de Star Trek tu ressembles le plus !</p>
-    
+
+        <h1 class="text-4xl"> Tu es {{nom_gagnant}}</h1>
+        <div class="flex justify-center my-12">
+            <img class="h-100" src="/static/{{nom_gagnant}}.jpg
+            ">
+        </div>
+                <p class="text-[21px] m-12  text-center "> {{resultat_description}}</p>
+
 
         <!-- Image -->
         <!-- Bouton pour commencer le quizz -->
-        <a class="bg-emerald-600 py-4 px-6 rounded-lg text-white hover:bg-emerald-700 z-0" href="/question"> Allons-y ! </a>
     </main>
 
 

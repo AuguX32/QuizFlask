@@ -25,17 +25,27 @@
             <div class="text-[40px] font-bold text-center text-white py-4 archivo-black mr-auto col-span2"><p>Quel personnage de Star Trek The Next Generation es-tu ?</p></div>
             <div class="flex fustify-center z-1 w-100"> <img src="/static/enterprise.png"> </div>
 
+
     </header>
 
 
     <main class="text-center bg-sky-500">
         <!-- Instructions -->
-        <p class="text-[21px] m-12  text-center "> Réponds aux questions pour deviner à quel personnage de Star Trek tu ressembles le plus !</p>
-    
+        <p class="text-[21px] m-12  text-center "> {{enonce}} </p>
+        <ul class="">
+
+            <li> <a href="/reponse/0"> {{reponses[0]}} </a> </li>
+            <li> <a href="/reponse/1"> {{reponses[1]}} </a> </li>
+            <li> <a href="/reponse/2"> {{reponses[2]}} </a> </li>
+            <li> <a href="/reponse/3"> {{reponses[3]}} </a> </li>
+            <li> <a href="/reponse/4"> {{reponses[4]}} </a> </li>
+
+
+        </ul>
 
         <!-- Image -->
+        
         <!-- Bouton pour commencer le quizz -->
-        <a class="bg-emerald-600 py-4 px-6 rounded-lg text-white hover:bg-emerald-700 z-0" href="/question"> Allons-y ! </a>
     </main>
 
 
